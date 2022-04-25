@@ -33,7 +33,27 @@ int b = int.Parse(Console.ReadLine());
 Console.WriteLine("zadejte treti cele cislo a zmackni enter");
 int c = int.Parse(Console.ReadLine());
 
-if (a > b && a > c)
+if (a > b)
+{
+if (a > c)
+    {
+        Console.WriteLine("prvni cislo je nejvetsi");
+    }
+else
+    {
+        Console.WriteLine("treti cislo je nejvetsi");
+    }
+}
+else if (b > c)
+{
+    Console.WriteLine("druhe cislo je nejvetsi");
+}
+else
+{
+    Console.WriteLine("treti cislo je nejvetsi");
+}
+
+/*if (a > b && a > c)
 {
     Console.WriteLine("prvni cislo je nejvetsi");
 }
@@ -61,4 +81,6 @@ else if (b == c && a < b)
 else if (a == b && b == c)
 {
     Console.WriteLine("vsechna 3 cisla jsou stejne velka");
-}
+}*/
+
+
