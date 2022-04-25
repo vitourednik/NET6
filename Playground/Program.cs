@@ -1,11 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-DateTime datum = new DateTime(2000,1,1);
+DateTime datum = new DateTime(2000,4,25);
 
 int vek(DateTime datum)
 {
     int vek;
-    vek = DateTime.Now.Year-datum.Year;
+    if (datum.Month > DateTime.Now.Month || (datum.Month == DateTime.Now.Month && datum.Day >= DateTime.Now.Day))
+        vek = DateTime.Now.Year - datum.Year;
+    else vek = DateTime.Now.Year - datum.Year - 1;
     return vek;
 }
 Console.WriteLine(vek(datum));
@@ -175,3 +177,4 @@ string vikendinfo = vikendb ? " a je to vikend" : "";
 
 Console.WriteLine($"{vystup}{vikend} a vikendinfo: {vikendinfo}");*/
 
+Console.WriteLine("konec");
