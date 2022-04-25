@@ -36,6 +36,3 @@ else
     Console.WriteLine("mimo hodnotu");
 }
 
-
-
-Console.WriteLine(vstup);
