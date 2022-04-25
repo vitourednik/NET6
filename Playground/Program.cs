@@ -46,3 +46,19 @@ else if (c > a & c > b)
     Console.WriteLine("treti cislo je nejvetsi");
 }
 
+else if (a == b & c < a)
+{
+    Console.WriteLine("prvni a druhe cislo jsou nejvetsi");
+}
+else if (a == c & b < a)
+{
+    Console.WriteLine("prvni a treti cisla jsou nejvetsi");
+}
+else if (b == c & a < b)
+{
+    Console.WriteLine("druhe a treti cisla jsou nejvetsi");
+}
+else if (a == b & b == c)
+{
+    Console.WriteLine("vsechna 3 cisla jsou stejne velka");
+}
