@@ -41,26 +41,33 @@ Console.Write("switch vystup: ");
 switch (vstup)
 {
     case 1:
-        Console.WriteLine("pondeli");
+        Console.Write("pondeli");
+        Console.WriteLine(" a neni vikend");
         break;
 
     case 2:
-        Console.WriteLine("utery");
+        Console.Write("utery");
+        Console.WriteLine(" a neni vikend");
         break;
     case 3:
-        Console.WriteLine("streda");
+        Console.Write("streda");
+        Console.WriteLine(" a neni vikend");
         break;
     case 4:
-        Console.WriteLine("ctvrtek");
+        Console.Write("ctvrtek");
+        Console.WriteLine(" a neni vikend");
         break;
     case 5:
-        Console.WriteLine("patek");
+        Console.Write("patek");
+        Console.WriteLine(" a neni vikend");
         break;
     case 6:
-        Console.WriteLine("sobota");
+        Console.Write("sobota");
+        Console.WriteLine(" a je víkend");
         break;
     case 7:
-        Console.WriteLine("nedele");
+        Console.Write("nedele");
+        Console.WriteLine(" a je víkend");
         break;
     default:
         Console.WriteLine("mimo hodnotu");
