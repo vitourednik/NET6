@@ -1,9 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
+int pom = 0;
+
+bool konec = true;
+
+while (konec)
+{
+    Console.WriteLine("Zadavejte cisla, pro ukonceni stisknete Q a enter");
+    string vstup = Console.ReadLine();
+    if (vstup == "Q")
+        konec = false;
+    else
+        pom += int.Parse(vstup);
+}
+Console.WriteLine(pom);
 
 
-
-
-string denVTydnu(denVTydnuE day)
+/*string denVTydnu(denVTydnuE day)
 {
     string vystup;
     switch (day)
@@ -37,7 +49,8 @@ string denVTydnu(denVTydnuE day)
     return vystup;
 }
 
-Console.WriteLine(denVTydnu(denVTydnuE.STREDA));
+Console.WriteLine(denVTydnu(denVTydnuE.STREDA));*/
+
 
 
 /*DateTime datum = new DateTime(2000,4,25);
