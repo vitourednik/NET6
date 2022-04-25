@@ -2,6 +2,9 @@
 
 Console.WriteLine("Zadejte hodnotu 1-7 pro cislo dne:");
 int vstup = int.Parse(Console.ReadLine());
+string vystup;
+string vikend = " a neni vikend";
+bool vikendb = false;
 
 if (vstup == 1)
 {
@@ -41,35 +44,37 @@ Console.Write("switch vystup: ");
 switch (vstup)
 {
     case 1:
-        Console.Write("pondeli");
-        Console.WriteLine(" a neni vikend");
+        vystup = "pondeli";
         break;
 
     case 2:
-        Console.Write("utery");
-        Console.WriteLine(" a neni vikend");
+        vystup = "utery";
         break;
     case 3:
-        Console.Write("streda");
-        Console.WriteLine(" a neni vikend");
+        vystup = "streda";
         break;
     case 4:
-        Console.Write("ctvrtek");
-        Console.WriteLine(" a neni vikend");
+        vystup = "ctvrtek";
         break;
     case 5:
-        Console.Write("patek");
-        Console.WriteLine(" a neni vikend");
+        vystup = "patek";
         break;
     case 6:
-        Console.Write("sobota");
-        Console.WriteLine(" a je víkend");
+        vystup = "sobota";
+        vikend = " a je víkend";
+        vikendb = true;
         break;
     case 7:
-        Console.Write("nedele");
-        Console.WriteLine(" a je víkend");
+        vystup = "nedele";
+        vikend = " a je víkend";
+        vikendb = true;
         break;
     default:
-        Console.WriteLine("mimo hodnotu");
+        vystup = "mimo hodnotu";
+        vikend = "";
             break;
 }
+
+string vikendinfo = vikendb ? " a je to vikend" : "";
+
+Console.WriteLine($"{vystup}{vikend} a vikendinfo: {vikendinfo}");
