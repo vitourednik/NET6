@@ -1,5 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+DateTime datum = new DateTime(2000,1,1);
+
+int vek(DateTime datum)
+{
+    int vek;
+    vek = DateTime.Now.Year-datum.Year;
+    return vek;
+}
+Console.WriteLine(vek(datum));
+
 //Console.WriteLine("Zadejte mnozstvi prijateho sodiku");
 //int vstup = int.Parse(Console.ReadLine());
 
@@ -10,7 +20,7 @@
 }
 
 Console.WriteLine(Suma(10, 20));*/
-Console.WriteLine("Zadejte cislo 1-7 pro den v tydnu: ");
+/*Console.WriteLine("Zadejte cislo 1-7 pro den v tydnu: ");
 int den = int.Parse(Console.ReadLine());
 
 string denVTydnu (int a)
@@ -47,7 +57,13 @@ string denVTydnu (int a)
     return vystup;
 }
 
-Console.WriteLine(denVTydnu(den));
+Console.WriteLine(denVTydnu(den));*/
+
+/*void Hello(string name)
+{
+    Console.WriteLine($"Hello {name}");
+}
+Hello("Abc");*/
 
 /*Console.WriteLine("Zadejte cele cislo:");
 int vstup = int.Parse(Console.ReadLine());
