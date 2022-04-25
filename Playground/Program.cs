@@ -1,6 +1,35 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Zadejte hodnotu 1-7 pro cislo dne:");
+//Console.WriteLine("Zadejte mnozstvi prijateho sodiku");
+//int vstup = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Zadejte cele cislo:");
+int vstup = int.Parse(Console.ReadLine());
+int pom = 0;
+
+for(int i = 1; i <= vstup; i++)
+{
+    pom = pom + i;
+}
+Console.WriteLine(pom);
+
+
+/*int opakovani = 10;
+
+for (int i = 0; i < opakovani; i++)
+{
+    Console.WriteLine(i);
+}
+
+int a = 10;
+
+while (a > 0)
+{
+    Console.WriteLine(a);
+    a--;
+}*/
+
+/*Console.WriteLine("Zadejte hodnotu 1-7 pro cislo dne:");
 int vstup = int.Parse(Console.ReadLine());
 string vystup;
 string vikend = " a neni vikend";
@@ -77,4 +106,5 @@ switch (vstup)
 
 string vikendinfo = vikendb ? " a je to vikend" : "";
 
-Console.WriteLine($"{vystup}{vikend} a vikendinfo: {vikendinfo}");
+Console.WriteLine($"{vystup}{vikend} a vikendinfo: {vikendinfo}");*/
+
