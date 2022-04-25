@@ -45,3 +45,4 @@ else if (c > a & c > b)
 {
     Console.WriteLine("treti cislo je nejvetsi");
 }
+
