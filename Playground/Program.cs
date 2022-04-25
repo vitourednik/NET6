@@ -9,9 +9,14 @@ int pom = 0;
 
 for(int i = 1; i <= vstup; i++)
 {
+    for (int j = 1; j <= i; j++)
+    {
+        Console.Write(i);
+    }
+    Console.WriteLine("");
     pom = pom + i;
 }
-Console.WriteLine(pom);
+Console.WriteLine($"vysledek = {pom}");
 
 
 /*int opakovani = 10;
