@@ -3,7 +3,53 @@
 //Console.WriteLine("Zadejte mnozstvi prijateho sodiku");
 //int vstup = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Zadejte cele cislo:");
+/*int Suma(int a, int b)
+{
+    int sum = a + b;
+    return sum;
+}
+
+Console.WriteLine(Suma(10, 20));*/
+Console.WriteLine("Zadejte cislo 1-7 pro den v tydnu: ");
+int den = int.Parse(Console.ReadLine());
+
+string denVTydnu (int a)
+{
+    string vystup;
+    switch (a)
+    {
+        case 1:
+            vystup = "pondeli";
+            break;
+
+        case 2:
+            vystup = "utery";
+            break;
+        case 3:
+            vystup = "streda";
+            break;
+        case 4:
+            vystup = "ctvrtek";
+            break;
+        case 5:
+            vystup = "patek";
+            break;
+        case 6:
+            vystup = "sobota";
+            break;
+        case 7:
+            vystup = "nedele";
+            break;
+        default:
+            vystup = "mimo hodnotu";
+            break;
+    }
+    return vystup;
+}
+
+Console.WriteLine(denVTydnu(den));
+
+/*Console.WriteLine("Zadejte cele cislo:");
 int vstup = int.Parse(Console.ReadLine());
 int pom = 0;
 
@@ -16,7 +62,7 @@ for(int i = 1; i <= vstup; i++)
     Console.WriteLine("");
     pom = pom + i;
 }
-Console.WriteLine($"vysledek = {pom}");
+Console.WriteLine($"vysledek = {pom}");*/
 
 
 /*int opakovani = 10;
