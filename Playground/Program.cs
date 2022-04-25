@@ -33,32 +33,32 @@ int b = int.Parse(Console.ReadLine());
 Console.WriteLine("zadejte treti cele cislo a zmackni enter");
 int c = int.Parse(Console.ReadLine());
 
-if (a > b & a > c)
+if (a > b && a > c)
 {
     Console.WriteLine("prvni cislo je nejvetsi");
 }
-else if (b > c & b > a)
+else if (b > c && b > a)
 {
     Console.WriteLine("druhe cislo je nejvetsi");
 }
-else if (c > a & c > b)
+else if (c > a && c > b)
 {
     Console.WriteLine("treti cislo je nejvetsi");
 }
 
-else if (a == b & c < a)
+else if (a == b && c < a)
 {
     Console.WriteLine("prvni a druhe cislo jsou nejvetsi");
 }
-else if (a == c & b < a)
+else if (a == c && b < a)
 {
     Console.WriteLine("prvni a treti cisla jsou nejvetsi");
 }
-else if (b == c & a < b)
+else if (b == c && a < b)
 {
     Console.WriteLine("druhe a treti cisla jsou nejvetsi");
 }
-else if (a == b & b == c)
+else if (a == b && b == c)
 {
     Console.WriteLine("vsechna 3 cisla jsou stejne velka");
 }
