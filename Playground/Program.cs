@@ -7,10 +7,12 @@ while (konec)
 {
     Console.WriteLine("Zadavejte cisla, pro ukonceni stisknete Q a enter");
     string vstup = Console.ReadLine();
+    bool isNum = int.TryParse(vstup, out _);
     if (vstup == "Q")
         konec = false;
-    else
+    else if (isNum == true)
         pom += int.Parse(vstup);
+    else Console.WriteLine("Zadej cislo...");
 }
 Console.WriteLine(pom);
 
