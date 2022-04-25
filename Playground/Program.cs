@@ -14,7 +14,7 @@ string retezec = "Ahoj světe!";
 
 char pismenko = 'A';*/
 
-Console.WriteLine("Zadejte teplotu: ");
+Console.WriteLine("Zadejte číselnou teplotu (desetinné číslo): ");
 
 string vstup = Console.ReadLine();
 
