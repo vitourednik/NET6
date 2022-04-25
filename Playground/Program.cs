@@ -1,6 +1,46 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-DateTime datum = new DateTime(2000,4,25);
+
+
+
+string denVTydnu(denVTydnuE day)
+{
+    string vystup;
+    switch (day)
+    {
+        case denVTydnuE.PONDELI:
+            vystup = "pondeli";
+            break;
+
+        case denVTydnuE.UTERY:
+            vystup = "utery";
+            break;
+        case denVTydnuE.STREDA:
+            vystup = "streda";
+            break;
+        case denVTydnuE.CTVRTEK:
+            vystup = "ctvrtek";
+            break;
+        case denVTydnuE.PATEK:
+            vystup = "patek";
+            break;
+        case denVTydnuE.SOBOTA:
+            vystup = "sobota";
+            break;
+        case denVTydnuE.NEDELE:
+            vystup = "nedele";
+            break;
+        default:
+            vystup = "mimo hodnotu";
+            break;
+    }
+    return vystup;
+}
+
+Console.WriteLine(denVTydnu(denVTydnuE.STREDA));
+
+
+/*DateTime datum = new DateTime(2000,4,25);
 
 int vek(DateTime datum)
 {
@@ -10,7 +50,7 @@ int vek(DateTime datum)
     else vek = DateTime.Now.Year - datum.Year - 1;
     return vek;
 }
-Console.WriteLine(vek(datum));
+Console.WriteLine(vek(datum));*/
 
 //Console.WriteLine("Zadejte mnozstvi prijateho sodiku");
 //int vstup = int.Parse(Console.ReadLine());
@@ -178,3 +218,14 @@ string vikendinfo = vikendb ? " a je to vikend" : "";
 Console.WriteLine($"{vystup}{vikend} a vikendinfo: {vikendinfo}");*/
 
 Console.WriteLine("konec");
+
+enum denVTydnuE
+{
+    PONDELI,
+    UTERY,
+    STREDA,
+    CTVRTEK,
+    PATEK,
+    SOBOTA,
+    NEDELE
+}
