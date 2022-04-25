@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-int cislo = -13 + 22;
+/*int cislo = -13 + 22;
 
 int a = 10;
 
@@ -12,11 +12,19 @@ double desetinne_cislo = 305.1234;
 
 string retezec = "Ahoj světe!";
 
-char pismenko = 'A';
+char pismenko = 'A';*/
 
-pom = a;
-a = b;
-b = pom;
-Console.WriteLine(a);
+Console.WriteLine("Zadejte teplotu: ");
+
+string vstup = Console.ReadLine();
+
+double celsius = double.Parse(vstup);
+
+double farenheit = (1.8 * celsius) + 32;
+
+//pom = a;
+//a = b;
+//b = pom;
+Console.WriteLine("Hodnota ferenheita je: " + farenheit);
 
 
