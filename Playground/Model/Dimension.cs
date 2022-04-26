@@ -27,8 +27,21 @@ namespace Playground.Model
 
         public double Obsah()
         {
-            Console.WriteLine($"Obsah je: {x*y}");
-            return x * y;
+            Console.WriteLine($"Obsah je: {Math.Abs(x * y)}");
+            return Math.Abs(x * y);
         }
+        public Kvadrant Kvadrant()
+            {
+            if (x < 0 && y < 0)
+                return Model.Kvadrant.Kvadrant3;
+            else if (y < 0 && x > 0)
+                return Model.Kvadrant.Kvadrant4;
+            else if (x >= 0 && y >= 0)
+                return Model.Kvadrant.Kvadrant2;
+            else if (y > 0 && x < 0)
+                return Model.Kvadrant.Kvadrant1;
+            else return Model.Kvadrant.Error;
+            }
     }
 }
+    

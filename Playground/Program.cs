@@ -8,16 +8,16 @@ Dimension dimension1 = new Dimension(2,3);
 dimension1.y = 22.5;
 dimension2.x = 4;
 dimension2.y = 6.5;*/
-double a;
+Kvadrant a;
 dimension1.Print();
-a = dimension1.Obsah();
+a = dimension1.Kvadrant();
 Console.WriteLine("Obsah v promenne a je: " + a);
 //Console.WriteLine($"Hodnota obj 1 x: { dimension1.x} a hodnota y: {dimension1.y}");
 //Console.WriteLine($"Hodnota obj 2 x: { dimension2.x} a hodnota y: {dimension2.y}");
 
-/*Person person1 = new Person();
-person1.Name = "Jan Novák";
-person1.DateOfBirth = new DateTime(1999, 12, 31);*/
+Person person1 = new Person("Jan","Novák");
+person1.DateOfBirth = new DateTime(1999, 12, 31);
+Console.WriteLine($"Jméno: {person1.FirstName} {person1.LastName}");
 
 
 
