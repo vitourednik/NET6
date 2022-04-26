@@ -1,5 +1,24 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int pom = 0;
+using Playground.Model;
+
+Dimension dimension1 = new Dimension();
+Dimension dimension2 = new Dimension();
+dimension1.x = 20.5;
+dimension1.y = 22.5;
+dimension2.x = 4;
+dimension2.y = 6.5;
+
+Console.WriteLine($"Hodnota obj 1 x: { dimension1.x} a hodnota y: {dimension1.y}");
+Console.WriteLine($"Hodnota obj 2 x: { dimension2.x} a hodnota y: {dimension2.y}");
+
+/*Person person1 = new Person();
+person1.Name = "Jan Novák";
+person1.DateOfBirth = new DateTime(1999, 12, 31);*/
+
+
+
+
+/*int pom = 0;
 
 bool konec = true;
 
@@ -15,7 +34,7 @@ while (konec)
     else Console.WriteLine("Zadej cislo...");
 }
 Console.WriteLine(pom);
-
+*/
 
 /*string denVTydnu(denVTydnuE day)
 {
