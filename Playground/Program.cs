@@ -2,7 +2,10 @@
 using Playground.Model;
 using Playground.Data;
 
-Console.WriteLine(PorovnaniObsahu.Porovnani());
+Car car = new Car("1234","bílá",100,"Škoda");
+OvereniSPZ.OverSPZ(car.SPZ);
+
+//Console.WriteLine(PorovnaniObsahu.Porovnani());
 
 /*for(int i = 0; i < 10; i++)
 {

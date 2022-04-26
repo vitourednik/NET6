@@ -8,6 +8,13 @@ namespace Playground.Model
 {
     internal class Car
     {
+        public Car(string _spz,string _barva, double _najetekm,string _znacka)
+        {
+            SPZ = _spz;
+            Barva = _barva;
+            NajeteKm = _najetekm;
+            Znacka = _znacka;
+        }
         public Car()
         {
 
