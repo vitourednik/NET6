@@ -2,8 +2,17 @@
 using Playground.Model;
 using Playground.Data;
 
-Car car = new Car("1234","bílá",100,"Škoda");
-OvereniSPZ.OverSPZ(car.SPZ);
+//OvereniSPZ.NactiKradenaAuta(OvereniSPZ.CestaSouboru);
+
+Car car = new Car("QQQQQ","bílá",100,"Škoda");
+bool kradene = OvereniSPZ.OverSPZ(car.SPZ);
+
+if (kradene)
+{
+    Console.WriteLine($"SPZ {car.SPZ} je kradené auto");
+}
+else if (OvereniSPZ.LzeNacitat) Console.WriteLine("Auto je OK");
+else Console.WriteLine("Problém s načítáním souboru");
 
 //Console.WriteLine(PorovnaniObsahu.Porovnani());
 
