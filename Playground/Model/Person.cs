@@ -8,6 +8,7 @@ namespace Playground.Model
 {
     internal class Person
     {
+        private string order;
         public Person(string _firstname,string _lastname)
         {
             FirstName = _firstname;
@@ -15,6 +16,13 @@ namespace Playground.Model
         }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string FullName
+        {
+            get
+            {
+                return $"{FirstName} {LastName}";
+            }
+        }
         public DateTime DateOfBirth { get; set; }
 
         public override string ToString()

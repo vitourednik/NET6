@@ -1,23 +1,33 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Playground.Model;
+using Playground.Data;
 
-Dimension dimension1 = new Dimension(2,3);
+Console.WriteLine(PorovnaniObsahu.Porovnani());
+
+/*for(int i = 0; i < 10; i++)
+{
+    Dimension dim1 = RandomPointGenerator.GetRandomPoint();
+    Console.WriteLine(dim1);
+}*/
+
+
+//Dimension dimension1 = new Dimension(2,3);
 //Dimension dimension2 = new Dimension(4,6.5);
 //Dimension dimension3 = new Dimension();
 /*dimension1.x = 20.5;
 dimension1.y = 22.5;
 dimension2.x = 4;
 dimension2.y = 6.5;*/
-Kvadrant a;
+/*Kvadrant a;
 dimension1.Print();
 a = dimension1.Kvadrant();
-Console.WriteLine("Obsah v promenne a je: " + a);
+Console.WriteLine("Obsah v promenne a je: " + a);*/
 //Console.WriteLine($"Hodnota obj 1 x: { dimension1.x} a hodnota y: {dimension1.y}");
 //Console.WriteLine($"Hodnota obj 2 x: { dimension2.x} a hodnota y: {dimension2.y}");
 
-Person person1 = new Person("Jan","Novák");
+/*Person person1 = new Person("Jan","Novák");
 person1.DateOfBirth = new DateTime(1999, 12, 31);
-Console.WriteLine($"Jméno: {person1.FirstName} {person1.LastName}");
+Console.WriteLine($"Jméno: {person1.FirstName} {person1.LastName}");*/
 
 
 

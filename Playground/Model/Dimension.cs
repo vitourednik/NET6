@@ -27,7 +27,7 @@ namespace Playground.Model
 
         public double Obsah()
         {
-            Console.WriteLine($"Obsah je: {Math.Abs(x * y)}");
+            //Console.WriteLine($"Obsah je: {Math.Abs(x * y)}");
             return Math.Abs(x * y);
         }
         public Kvadrant Kvadrant()
@@ -42,6 +42,11 @@ namespace Playground.Model
                 return Model.Kvadrant.Kvadrant1;
             else return Model.Kvadrant.Error;
             }
+
+        public override string ToString()
+        {
+            return $"Hodnota obj 1 x: {x} a hodnota y: {y}";
+        }
     }
 }
     
