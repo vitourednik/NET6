@@ -11,7 +11,8 @@
             <Button x:Name="btnLoad" Click="btnLoad_Click" Content="VYGENERUJ DATASET" Width="150" Height="25" Margin="10">
             </Button>
         </StackPanel>
-        <TextBlock x:Name="txbInfo" Text="INFO O LIDECH"> 
+        <DataGrid x:Name="dgDataset"/>
+            <TextBlock x:Name="txbInfo" Text="INFO O LIDECH"> 
             
         </TextBlock>
     </StackPanel>

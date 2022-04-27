@@ -14,6 +14,7 @@ namespace WpfApp1
         
         public static void GeneratePeople(int cnt)
         {
+            People = new List<Person>();
             for (int i = 0; i < cnt; i++)
             {
                 People.Add(RandomPersonGenerator.GetRandomPerson());
