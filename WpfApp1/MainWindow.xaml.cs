@@ -35,5 +35,10 @@ namespace WpfApp1
             //    txbInfo.Text += osoba.ToString() + Environment.NewLine;
             //}
         }
+
+        private void btnDetail_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
