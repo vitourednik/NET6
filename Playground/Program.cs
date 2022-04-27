@@ -5,7 +5,7 @@ using Playground.Data;
 
 int[] cisla = { 11, 2, 13, 44, -5, 6, 127,-99,0,256 };
 
-var result = cisla.Where(cislo => cislo >= -55 && cislo <= 55);
+var result = cisla.Where(cislo => cislo >= -50 && cislo <= 50);
 foreach (var cislo in result)
 {
     Console.WriteLine(cislo);
