@@ -27,5 +27,10 @@ namespace Playground.Model
         public string City { get; set; } = "";
         public int PostCode { get; set; } = 0;
         public string Country { get; set; } = "";
+
+        public override string ToString()
+        {
+            return $"{Street}, {City}, {Country}, {PostCode}";
+        }
     }
 }

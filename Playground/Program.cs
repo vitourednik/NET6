@@ -2,11 +2,24 @@
 using Playground.Model;
 using Playground.Data;
 
-Car car1 = new Car();
-Person person1 = new Person("Jan", "Novák");
-car1.Majitel = person1;
-Console.WriteLine(car1.Majitel.LastName);
 
+int[] cisla = { 11, 2, 13, 44, -5, 6, 127,-99,0,256 };
+
+var result = cisla.Where(cislo => cislo >= -55 && cislo <= 55);
+foreach (var cislo in result)
+{
+    Console.WriteLine(cislo);
+}
+
+/*Car car1 = new Car();
+Person person1 = new Person("Jan", "Novák");
+//Address address1 = new Address();
+car1.Majitel = person1;
+//person1.Address = address1;
+Console.WriteLine(car1.Majitel.LastName);
+car1.Majitel.Address.City = "Brno";
+Console.WriteLine(car1.Majitel.Address);
+*/
 //OvereniSPZ.NactiKradenaAuta(OvereniSPZ.CestaSouboru);
 
 /*Car car = new Car("QQQQQ","bílá",100,"Škoda");
