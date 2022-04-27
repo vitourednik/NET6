@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Playground.Model
 {
-    internal class Address
+    public class Address
     {
         public Address()
         {

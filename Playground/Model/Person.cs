@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace Playground.Model
 {
-    internal class Person
+    public class Person
     {
         private string order;
         public Person(string _firstname,string _lastname)
         {
             FirstName = _firstname;
             LastName = _lastname;
+        }
+        public Person()
+        {
+
         }
         public string FirstName { get; set; }
         public string LastName { get; set; }

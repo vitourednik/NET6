@@ -2,14 +2,41 @@
 using Playground.Model;
 using Playground.Data;
 
+List<Person> lide = new();
+for (int i = 0; i < 50; i++)
+{
+    lide.Add(RandomPersonGenerator.GetRandomPerson());
+}
 
-int[] cisla = { 11, 2, 13, 44, -5, 6, 127,-99,0,256 };
+/*var cisla = new[] { 1, 12, 3, 44, 5, -6, 7, 10, 11, 12 };
 
-var result = cisla.Where(cislo => cislo >= -50 && cislo <= 50);
+Console.WriteLine(cisla.Sum());*/
+
+/*
+List<Person> lide = new();
+for (int i = 0; i < 50; i++)
+{
+    lide.Add(RandomPersonGenerator.GetRandomPerson());
+}
+
+var result = //lide.Where(x => x.DateOfBirth.Year < 1980);
+    lide.Where(x => x.Address.City == "Brno").Count();
+Console.WriteLine(result);*/
+/*foreach (var person in result)
+{
+    Console.WriteLine($"{person} {person.DateOfBirth.ToString("yyyy")}");
+}*/
+
+/*int[] cisla = { 11, 2, 13, 44, -5, 6, 127,-99,0,256 };
+var counter = 0;
+var result = cisla.Select(cislo => Math.Abs(cislo));
+//Console.WriteLine(result);
 foreach (var cislo in result)
 {
+    counter++;
     Console.WriteLine(cislo);
 }
+Console.WriteLine($"Kladnych cisel je: {counter}");*/
 
 /*Car car1 = new Car();
 Person person1 = new Person("Jan", "Novák");
@@ -295,9 +322,9 @@ string vikendinfo = vikendb ? " a je to vikend" : "";
 
 Console.WriteLine($"{vystup}{vikend} a vikendinfo: {vikendinfo}");*/
 
-Console.WriteLine("konec");
+Console.WriteLine($"konec");
 
-enum denVTydnuE
+/*enum denVTydnuE
 {
     PONDELI,
     UTERY,
@@ -306,4 +333,4 @@ enum denVTydnuE
     PATEK,
     SOBOTA,
     NEDELE
-}
+}*/
