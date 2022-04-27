@@ -2,9 +2,14 @@
 using Playground.Model;
 using Playground.Data;
 
+Car car1 = new Car();
+Person person1 = new Person("Jan", "Novák");
+car1.Majitel = person1;
+Console.WriteLine(car1.Majitel.LastName);
+
 //OvereniSPZ.NactiKradenaAuta(OvereniSPZ.CestaSouboru);
 
-Car car = new Car("QQQQQ","bílá",100,"Škoda");
+/*Car car = new Car("QQQQQ","bílá",100,"Škoda");
 bool kradene = OvereniSPZ.OverSPZ(car.SPZ);
 
 if (kradene)
@@ -13,7 +18,7 @@ if (kradene)
 }
 else if (OvereniSPZ.LzeNacitat) Console.WriteLine("Auto je OK");
 else Console.WriteLine("Problém s načítáním souboru");
-
+*/
 //Console.WriteLine(PorovnaniObsahu.Porovnani());
 
 /*for(int i = 0; i < 10; i++)

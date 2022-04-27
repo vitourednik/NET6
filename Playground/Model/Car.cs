@@ -19,7 +19,7 @@ namespace Playground.Model
         {
 
         }
-
+        #region properties
         public string SPZ { get; set; }
 
         public string Barva { get; set; }
@@ -27,6 +27,7 @@ namespace Playground.Model
         public double NajeteKm { get; set; }
 
         public string Znacka { get; set; }
-
+        public Person Majitel { get; set; }
+        #endregion
     }
 }
