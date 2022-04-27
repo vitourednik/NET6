@@ -10,7 +10,10 @@ namespace Playground.Model
     {
         public Address()
         {
-
+            Street = "";
+            City = "";
+            Country = "Česká republika";
+            PostCode = 0;
         }
         public Address(string _street,string _city,int _postcode,string _country)
         {
