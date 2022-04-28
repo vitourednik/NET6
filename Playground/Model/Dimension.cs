@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Playground.Model
 {
-    internal class Dimension
+    public class Dimension
     {
         public Dimension(double _x, double _y)
         {

@@ -7,7 +7,7 @@ using Playground.Model;
 
 namespace Playground.Data
 {
-    internal class RandomPointGenerator
+    public class RandomPointGenerator
     {
         private static int Counter;
 
