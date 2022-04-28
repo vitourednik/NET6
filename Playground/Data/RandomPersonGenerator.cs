@@ -44,5 +44,15 @@ namespace Playground.Data
             else
                 return person2;
         }
+
+        public static List<Person> GetPeople(int howMany)
+        {
+            var people = new List<Person>();
+            for (int i = 0; i < howMany; i++)
+            {
+                people.Add(GetRandomPerson());
+            }
+            return people;
+        }
     }
 }

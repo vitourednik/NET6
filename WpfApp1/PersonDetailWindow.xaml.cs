@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Playground.Model;
 
 namespace WpfApp1
 {
@@ -19,9 +20,13 @@ namespace WpfApp1
     /// </summary>
     public partial class PersonDetailWindow : Window
     {
-        public PersonDetailWindow()
+        public PersonDetailWindow(Person person)
         {
             InitializeComponent();
+            txtAddress.Text = person.Address.ToString();
+            txtFirstName.Text = person.FirstName;
+            txtLastName.Text = person.LastName;
+            txtDateOfBirth.Text = person.DateOfBirth.ToString();
         }
     }
 }

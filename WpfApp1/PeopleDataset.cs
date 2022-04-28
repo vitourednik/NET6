@@ -11,14 +11,17 @@ namespace WpfApp1
     internal static class PeopleDataset
     {
         public static List<Person> People = new List<Person>();
-        
+        public static string PeopleAPIURL = "https://localhost:7193";
+
         public static void GeneratePeople(int cnt)
         {
-            People = new List<Person>();
-            for (int i = 0; i < cnt; i++)
-            {
-                People.Add(RandomPersonGenerator.GetRandomPerson());
-            }
+            RandomPersonGenerator.GetPeople(cnt);
         }
+
+        public static void LoadPeopleFromAPI(int cnt)
+        {
+
+        }
+
     }
 }

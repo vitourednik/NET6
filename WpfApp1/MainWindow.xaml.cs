@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Playground.Model;
 
 namespace WpfApp1
 {
@@ -37,6 +38,24 @@ namespace WpfApp1
         }
 
         private void btnDetail_Click(object sender, RoutedEventArgs e)
+        {
+            var person = (Person)dgDataset.SelectedItem;
+
+            if (person != null)
+            {
+                //otevri okno
+                PersonDetailWindow pdw = new PersonDetailWindow(person);
+                pdw.Show();
+                
+            }
+            else
+            {
+                //nema nic vybraneho
+            }
+
+        }
+
+        private void btnLoadApi_Click(object sender, RoutedEventArgs e)
         {
 
         }
