@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Playground.Model;
 
 namespace MWCApp.Data
 {
@@ -9,5 +10,8 @@ namespace MWCApp.Data
             : base(options)
         {
         }
+
+        public DbSet<Person> People { get; set; }
+        public DbSet<Address> Addresses { get; set; }
     }
 }
