@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Playground.Model;
 using Playground.Data;
+using System.Net.Http;
+using System.Net.Http.Json;
 
 namespace WpfApp1
 {
@@ -18,9 +20,16 @@ namespace WpfApp1
             RandomPersonGenerator.GetPeople(cnt);
         }
 
-        public static void LoadPeopleFromAPI(int cnt)
+        public static async Task LoadPeopleFromAPI(int cnt)
         {
+            HttpClient httpClient = new HttpClient();
 
+            var result = await httpClient.GetAsync(PeopleAPIURL + "/people/" + cnt.ToString());
+        
+        if(result.IsSuccessStatusCode)
+            {
+                People = await result.Content.ReadFromJsonAsync<List<Person>>();
+            }
         }
 
     }
